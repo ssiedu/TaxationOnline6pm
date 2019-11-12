@@ -4,9 +4,25 @@
         <servlet-name>TaxCalculator</servlet-name>
         <servlet-class>TaxCalculator</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>TaxRatesServlet</servlet-name>
+        <servlet-class>TaxRatesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GuideLinesServlet</servlet-name>
+        <servlet-class>GuideLinesServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>TaxCalculator</servlet-name>
         <url-pattern>/TaxCalculator</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TaxRatesServlet</servlet-name>
+        <url-pattern>/TaxRatesServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GuideLinesServlet</servlet-name>
+        <url-pattern>/GuideLinesServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

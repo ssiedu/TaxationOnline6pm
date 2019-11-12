@@ -29,9 +29,25 @@ public class TaxCalculator extends HttpServlet {
         }
         //step-3 (provides the response)
         PrintWriter out=response.getWriter();
-        out.println("Thanks For Visiting Us.");
-        out.println("Your Tax Liability Is  : "+tax);
-        out.println("Pay Your Taxes Before 31st March");
+        out.println("<html>");
+        out.println("<body bgcolor=gray>");
+        out.println("<h2>Income Tax Dept</h2>");
+        out.println("<hr>");
+        out.println("<h3>Thanks For Visiting Us.<h3>");
+        out.println("<table border=2>");
+        out.println("<tr>");
+        out.println("<td>Income</td>");
+        out.println("<td>"+income+"</td>");
+        out.println("</tr>");
+        out.println("<tr>");
+        out.println("<td>Tax</td>");
+        out.println("<td>"+tax+"</td>");
+        out.println("</tr>");
+        out.println("</table>");
+        out.println("<hr>");
+        out.println("<marquee>Pay Your Taxes Before 31st March<marquee>");
+        out.println("</body>");
+        out.println("</html>");
         out.close();
     }
 
